@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+</head>
+<body>
+    <div>
+        <a href="index.html">Home Page</a>
+        <a href="ListofRestaurants.html">Restaurants</a>
+        <a href="Events.html">Events</a>
+        <a href="ContactUsPage.html">Contact Us</a>
+        <a href="Projectsitemap.html">Sitemap</a>       
+    </div>
+    <form method="POST" action="/process">
+            <h1>Contact Us</h1>
+            <p>
+                Have questions about where to eat/visit in Manhattan Beach? Want to leave a restaurant review? Rate your overall website experience? Fill out the form below with your information and why you are contacting us and a representative will send you and email or give you a phone call within 24-hours of submitting your form.
+            </p>
+        <fieldset>
+            <legend>Your Information:</legend>
+        <p>
+            <label for="Full Name">Full Name:</label>
+            <input type="text" id="Full Name" name="Full Name" placeholder="Enter your full name" maxlength="250">
+        </p>
+        <p>
+            <label for="Phone Nummber">Phone Nummber:</label>
+            <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your phone number" maxlength="250">
+        </p>
+        <p>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter your email" maxlength="250">
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Rate Your Experience</legend>
+            <p>
+                <label for="Rating">Was the information on this website helpful?</label>
+            </p>
+            <div>
+                <label>
+                    <input type="radio" name="rate" value="1"/>
+                    Not Helpful
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="2"/>
+                    Somewhat Helpful
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="3"/>
+                    Helpful
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="4"/>
+                    Very Helpful
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+           <legend>Comments or Questions:</legend>
+            <div>
+                <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="e-updates" id="e-updates" checked/>
+                <label for="e-updates">Sign me up for email updates</label>
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT"/>
+                <input type="reset" value="RESET"/>
+            </div>
+        </fieldset>
+    </form>
+    <p><a href="Projectsitemap.html">Sitemap</a></p>
+</body>
+</html>
