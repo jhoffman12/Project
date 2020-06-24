@@ -6,6 +6,7 @@
     <meta name="author" content="Jamie Hoffman">
     <meta name="description" content="Manhattan Beach tourist attractions, the website that tells you where to go, what to do, and where to eat in Manhattan Beach,CA.">
     <title>Project Home Page</title>
+    <link rel="stylesheet" href="baseline.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -19,27 +20,39 @@
 
   gtag('config', 'G-GL9FFZSTCZ');
 </script>
+<style>
+    p{
+        font-family: cursive;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25pt;
+        color: lightcoral;
+    }
+</style>
 </head>
 <body>
-    <div>
-        <a href="index.html">Home Page</a>
-        <a href="ListofRestaurants.html">Restaurants</a>
-        <a href="Events.html">Events</a>
-        <a href="ContactUsPage.html">Contact Us</a>
-        <a href="Projectsitemap.html">Sitemap</a>       
+    <div class="bar">
+        <ul class="navrow">
+            <li class="nav"><a href="index.html">Home Page</a></li>
+            <li class="nav"><a href="ListofRestaurants.html">Restaurants</a></li>
+            <li class="nav"><a href="Events.html">Events</a></li>
+            <li class="nav"><a href="ContactUsPage.html">Contact Us</a></li>
+            <li class="nav"><a href="Projectsitemap.html">Sitemap</a></li>    
+        </ul>      
     </div>
-    <h1>Places to eat and things to see in Manhattan Beach, CA</h1>
-    <img src="images/MBPier.jpg" alt="Manhattan Beach Pier" title="Manhattan Beach Pier" height="300"/>
-   <div>
-        <iframe 
+    <h1>Places to Eat and Things to See in Manhattan Beach, CA</h1>
+    <img id="pier" src="images/MBPier.jpg" alt="Manhattan Beach Pier" title="Manhattan Beach Pier" height="350"/>
+    <p>
+        Located in Southern California, Manhattan Beach is a hidden gem. It is known for being the land of beach volleyball and a place for tourists to enjoy the beach during the summer months. Manhattan Beach is an extremely large magnet for tourists. This website will help tourists decide what to do during their stay in the wonderful beach community. This website can help users find the perfect place to eat in Downtown Manhattan Beach depending on their needs. It also lists some other fun activities that visitors can do while in the area. The restaurants listed on this website are only ones in Downtown Manhattan Beach and it does not list all of the restaurants in the Downtown area. The restaurants range from high-end meals to quick grab-and-go food options. If you find something that catches your eye, click on the link to the company's website to learn more information.
+    </p>
+    <div>
+        <iframe id="vid"
         src="https://www.youtube.com/embed/nhUDY5xQq9w" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
         </iframe>
     </div>
-    <p>
-        Located in Southern California, Manhattan Beach is a hidden gem. It is known for being the land of beach volleyball and a place for tourists to enjoy the beach during the summer months. Manhattan Beach is an extremely large magnet for tourists. This website will help tourists decide what to do during their stay in the wonderful beach community. This website can help users find the perfect place to eat in Downtown Manhattan Beach depending on their needs. It also lists some other fun activities that visitors can do while in the area. The restaurants listed on this website are only ones in Downtown Manhattan Beach and it does not list all of the restaurants in the Downtown area. The restaurants range from high-end meals to quick grab-and-go food options. If you find something that catches your eye, click on the link to the company's website to learn more information.
-    </p>
+   
     <p><a href="Projectsitemap.html">Sitemap</a></p>
 </body>
 </html>

@@ -1,0 +1,52 @@
+.bar{
+    border-top: 4px solid lightskyblue;
+    padding: 0 60px;
+    border-bottom: 4px solid lightskyblue;
+}
+.navrow{
+    -webkit-box-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0 2px;
+}
+.nav{
+    display: inline-block;
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 1rem;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: darkseagreen;
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+h1{
+    font-family: cursive;
+    border: coral;
+    border-style: dotted;
+    text-align: center;
+    color: coral;
+}
+#pier{
+    position: relative;
+    z-index: -1;
+    display: block;
+    float: left;
+    border-width:4px; border-style: solid; border-color: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px
+}
+#vid{
+    position: relative;
+    display: block;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
