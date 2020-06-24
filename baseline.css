@@ -30,7 +30,7 @@ h1{
     text-align: center;
     color: coral;
 }
-#pier{
+.pier{
     position: relative;
     z-index: -1;
     display: block;
@@ -49,4 +49,27 @@ h1{
     padding: 10px;
     height: 300px;
     width: 400px;
+}
+.rightp{
+    position: relative;
+    z-index: -1;
+    display: block;
+    float: right;
+    border-width:4px; border-style: solid; border-color: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cursive;
+    border-collapse: collapse;
+    border: solid lightskyblue;
+    border-width: medium;
+    text-align: center;
+}
+caption{
+    font-size: 20pt;
+    color: lightcoral;
 }
