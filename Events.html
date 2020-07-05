@@ -69,7 +69,7 @@
         </ul>
     </div>
     <h2><a id="jan">January</a></h2>
-        <img class="pier" src="images/farmersmarket.jpg" alt="fm" title="Farmer's Market" height="200">
+        <img class="pier" src="images/farmersmarket.jpg" alt="fm" name="one" title="Farmer's Market" height="200">
     <p class="plans">
         SIDEWALK SALE: Stores have major sales and put some of their merchandise along the sidewalks.
     </p>
@@ -77,11 +77,11 @@
        REOCCURRING TUESDAY FARMER'S MARKET: On every tuesday of the year local vendors come out and provide produce for the Farmer's market every single Tuesday.
     </p>
     <h2><a id="feb">February</a></h2>
-       <img class="rightp" src="images/iceskating.jpg" alt="ice" title="ice" height="200"> 
+       <img class="rightp" src="images/iceskating.jpg" alt="ice" name="two" title="ice" height="200"> 
     <p>   
        ICE SKATING RINK: A local skating rink for people to experience a taste of winter in an area that is sunny year round.
     </p>
-    <img class="pier" src="images/grandview.JPG" alt="5k" title="5k" height="200">
+    <img class="pier" src="images/grandview.JPG" alt="5k" name="three" title="5k" height="200">
     <p>
         SUPER BOWL WATCH PARTIES AT BARS: Various bars in the downtown area will have their televisions on and turned to the Super Bowl.
     </p>
@@ -89,7 +89,7 @@
       LOCAL 5K: Elementary schools in the area will host 5Ks to support the schools.
     </p> 
     <h2><a id="mar">March</a></h2>
-        <img class="rightp" src="images/littleleague.jpg" alt="little league" title="little league" height="200">
+        <img class="rightp" src="images/littleleague.jpg" alt="little league" name="four" title="little league" height="200">
     <p>
         ST. PATRICK'S DAY BAR CRAWL: Locals will bounce around from pub to pub and enjoy the holiday in fashion.
     </p> 
@@ -195,6 +195,37 @@
     </p>
 
     <p><a href="Projectsitemap.html">Sitemap</a></p>
+<script>
+    function enlarge(abc) {
+        let x = document.getElementsByName(abc);
+        let w = x.width;
+        w = w * 1.5;
+        x.width = w;
+      }
 
+      document.getElementsByName("one").onmouseover = function () {
+        enlarge("one");
+      };
+
+      document.getElementsByName("two").onmouseover = function () {
+        enlarge("two");
+      };
+
+      function reduce(mini) {
+        let x = document.getElementsByName(mini);
+        let w = x.width;
+        w = w / 1.5;
+        x.width = w;
+      }
+
+      document.getElementsByName("one").onmouseout = function () {
+        reduce("one");
+      };
+      
+      document.getElementsByName("two").onmouseout = function () {
+        reduce("two");
+      };
+
+</script>
 </body>
 </html>
