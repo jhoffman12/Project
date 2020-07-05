@@ -34,11 +34,11 @@
 <body>
     <div class="bar">
         <ul class="navrow">
-            <li class="nav"><a href="index.html">Home Page</a></li>
-            <li class="nav"><a href="ListofRestaurants.html">Restaurants</a></li>
-            <li class="nav"><a href="Events.html">Events</a></li>
-            <li class="nav"><a href="ContactUsPage.html">Contact Us</a></li>
-            <li class="nav"><a href="Projectsitemap.html">Sitemap</a></li>    
+            <li class="nav"><a id="home" href="index.html">Home Page</a></li>
+            <li class="nav"><a id="rest" href="ListofRestaurants.html">Restaurants</a></li>
+            <li class="nav"><a id="even"href="Events.html">Events</a></li>
+            <li class="nav"><a id="cont" href="ContactUsPage.html">Contact Us</a></li>
+            <li class="nav"><a id="site" href="Projectsitemap.html">Sitemap</a></li>    
         </ul>      
     </div>
     <h1>Places to Eat and Things to See in Manhattan Beach, CA</h1>
@@ -55,6 +55,34 @@
     </div>
    
     <p><a href="Projectsitemap.html">Sitemap</a></p>
+<script>
+    function altertext () {
+        const para = document.querySelector("p");
+        para.innerText = "This is a photo of the Manhattan Beach Pier, it is known as the perfect beach lookout to see Malibu up north and Palos Verdes down south. The pier is one of the best places in the South Bay to watch the sun set over the ocean.";
+    }
+    document.querySelector("img").onmouseover = altertext;
 
+    function highlight (xyz) {
+        const header = document.getElementById("xyz");
+        header.style.fontSize = "36px";
+        header.style.textDecoration = "underline";
+        header.style.color = "black";
+    }
+    document.getElementById("home").onmouseover = function () {
+        highlight("home");
+    };
+    document.getElementById("rest").onmouseover = function () {
+        highlight("rest");
+    };
+    document.getElementById("even").onmouseover = function () {
+        highlight("even");
+    };
+    document.getElementById("cont").onmouseover = function () {
+        highlight("cont");
+    };
+    document.getElementById("site").onmouseover = function () {
+        highlight("site");
+    };
+</script>
 </body>
 </html>
