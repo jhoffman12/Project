@@ -16,12 +16,25 @@
     line-height: 1rem;
     font-weight: 500;
 }
+.navrowsm{
+    -webkit-box-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0 2px;
+}
+.navsm{
+    display: inline-block;
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 1rem;
+    font-weight: 500;
+}
 a{
     text-decoration: none;
     color: darkseagreen;
 }
 body{
-    background-color: lightgoldenrodyellow;
+    background-color: palegoldenrod;
 }
 h1{
     font-family: cursive;

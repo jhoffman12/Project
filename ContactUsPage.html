@@ -43,6 +43,8 @@
             <p id="info">
                 Have questions about where to eat/visit in Manhattan Beach? Want to leave a restaurant review? Rate your overall website experience? Fill out the form below with your information and why you are contacting us and a representative will send you and email or give you a phone call within 24-hours of submitting your form.
             </p>
+        <p style="text-align: center; font-size: 24px;"> <span id="message">Fill out the form below:</span>
+        </p>
         <fieldset>
             <legend>Your Information:</legend>
         <p>
@@ -92,11 +94,18 @@
                 <label for="e-updates">Sign me up for email updates</label>
             </div>
             <div>
-                <input type="submit" value="SUBMIT"/>
+                <input id="submit" type="button" value="SUBMIT"/>
                 <input type="reset" value="RESET"/>
             </div>
         </fieldset>
     </form>
     <p><a href="Projectsitemap.html">Sitemap</a></p>
+<script>
+    function submitf() {
+        let msg = document.getElementById("message");
+        msg.innerText = "THANK YOU FOR SUBMITTING THIS FORM!";
+    }
+    document.getElementById("submit").onclick = submitf;
+</script>
 </body>
 </html>
