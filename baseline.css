@@ -45,7 +45,7 @@ h1{
 }
 .pier{
     position: relative;
-    z-index: -1;
+    z-index: 2;
     display: block;
     float: left;
     border-width:4px; border-style: solid; border-color: lightskyblue;
