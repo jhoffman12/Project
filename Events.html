@@ -68,8 +68,8 @@
             <li class="navsm"><a href="#dec">December</a></li>
         </ul>
     </div>
-    <h2><a id="jan">January</a></h2>
-        <img class="pier" src="images/farmersmarket.jpg" alt="fm" name="one" title="Farmer's Market" height="200">
+    <h2><a id="jan">January</a></h2> 
+    <img class="pier" src="images/farmersmarket.jpg" alt="fm" name="one" title="Farmer's Market" height="200">
     <p class="plans">
         SIDEWALK SALE: Stores have major sales and put some of their merchandise along the sidewalks.
     </p>
@@ -197,33 +197,33 @@
     <p><a href="Projectsitemap.html">Sitemap</a></p>
 <script>
     function enlarge(abc) {
-        let x = document.getElementsByName(abc);
+        let x = document.getElementById(abc);
         let w = x.width;
         w = w * 1.5;
         x.width = w;
       }
 
-      document.getElementsByName("one").onmouseover = function () {
-        enlarge("one");
+      document.getElementById("rightp").onmouseover = function () {
+        enlarge("rightp");
       };
 
-      document.getElementsByName("two").onmouseover = function () {
-        enlarge("two");
+      document.getElementById("pier").onmouseover = function () {
+        enlarge("pier");
       };
 
       function reduce(mini) {
-        let x = document.getElementsByName(mini);
+        let x = document.getElementById(mini);
         let w = x.width;
         w = w / 1.5;
         x.width = w;
       }
 
-      document.getElementsByName("one").onmouseout = function () {
-        reduce("one");
+      document.getElementById("rightp").onmouseout = function () {
+        reduce("rightp");
       };
       
-      document.getElementsByName("two").onmouseout = function () {
-        reduce("two");
+      document.getElementById("pier").onmouseout = function () {
+        reduce("pier");
       };
 
 </script>

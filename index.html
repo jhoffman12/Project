@@ -89,6 +89,28 @@
     document.getElementById("site").onmouseover = function () {
         highlight("site");
     };
+
+    function normal (abc) {
+        const header = document.getElementById("abc");
+        header.style.fontSize = "30px";
+        header.style.textDecoration = "none";
+        header.style.color = "darkseagreen";
+    }
+    document.getElementById("home").onmouseout = function () {
+        normal("home");
+    };
+    document.getElementById("rest").onmouseout = function () {
+        normal("rest");
+    };
+    document.getElementById("even").onmouseout = function () {
+        normal("even");
+    };
+    document.getElementById("cont").onmouseout = function () {
+        normal("cont");
+    };
+    document.getElementById("site").onmouseout = function () {
+        normal("site");
+    };
 </script>
 </body>
 </html>
