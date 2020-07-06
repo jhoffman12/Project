@@ -32,11 +32,11 @@
 <body>
     <div class="bar">
         <ul class="navrow">
-            <li class="nav"><a href="index.html">Home Page</a></li>
-            <li class="nav"><a href="ListofRestaurants.html">Restaurants</a></li>
-            <li class="nav"><a href="Events.html">Events</a></li>
-            <li class="nav"><a href="ContactUsPage.html">Contact Us</a></li>
-            <li class="nav"><a href="Projectsitemap.html">Sitemap</a></li>    
+            <li class="nav"><a id="home" href="index.html">Home Page</a></li>
+            <li class="nav"><a id="rest" href="ListofRestaurants.html">Restaurants</a></li>
+            <li class="nav"><a id="even" href="Events.html">Events</a></li>
+            <li class="nav"><a id="cont" href="ContactUsPage.html">Contact Us</a></li>
+            <li class="nav"><a id="site" href="Projectsitemap.html">Sitemap</a></li>    
         </ul>   
     </div>
     <h1>Sitemap</h1>
@@ -48,5 +48,50 @@
     </h3>
     <h5>*All intellectual property on this website can be found on google images or in the public domain, the site-owner takes no credit for any of the videos or images.*</h5>
     <h5>I, Jamie Hoffman, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein.</h5>
+<script>
+    function highlight (xyz) {
+        const header = document.getElementById(xyz);
+        header.style.fontSize = "36px";
+        header.style.textDecoration = "underline";
+        header.style.color = "black";
+    }
+    document.getElementById("home").onmouseover = function () {
+        highlight("home");
+    };
+    document.getElementById("rest").onmouseover = function () {
+        highlight("rest");
+    };
+    document.getElementById("even").onmouseover = function () {
+        highlight("even");
+    };
+    document.getElementById("cont").onmouseover = function () {
+        highlight("cont");
+    };
+    document.getElementById("site").onmouseover = function () {
+        highlight("site");
+    };
+
+    function normal (abc) {
+        const header = document.getElementById(abc);
+        header.style.fontSize = "30px";
+        header.style.textDecoration = "none";
+        header.style.color = "darkseagreen";
+    }
+    document.getElementById("home").onmouseout = function () {
+        normal("home");
+    };
+    document.getElementById("rest").onmouseout = function () {
+        normal("rest");
+    };
+    document.getElementById("even").onmouseout = function () {
+        normal("even");
+    };
+    document.getElementById("cont").onmouseout = function () {
+        normal("cont");
+    };
+    document.getElementById("site").onmouseout = function () {
+        normal("site");
+    }; 
+</script>
 </body>
 </html>
