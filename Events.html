@@ -196,36 +196,6 @@
 
     <p><a href="Projectsitemap.html">Sitemap</a></p>
 <script>
-    function enlarge(abc) {
-        let x = document.getElementById(abc);
-        let w = x.width;
-        w = w * 1.5;
-        x.width = w;
-      }
-
-      document.getElementById("rightp").onmouseover = function () {
-        enlarge("rightp");
-      };
-
-      document.getElementById("pier").onmouseover = function () {
-        enlarge("pier");
-      };
-
-      function reduce(mini) {
-        let x = document.getElementById(mini);
-        let w = x.width;
-        w = w / 1.5;
-        x.width = w;
-      }
-
-      document.getElementById("rightp").onmouseout = function () {
-        reduce("rightp");
-      };
-      
-      document.getElementById("pier").onmouseout = function () {
-        reduce("pier");
-      };
-    
     function highlight (xyz) {
         const header = document.getElementById(xyz);
         header.style.fontSize = "36px";
@@ -270,6 +240,35 @@
         normal("site");
     };
 
+    function enlarge(abc) {
+        let x = document.getElementById(abc);
+        let w = x.width;
+        w = w * 1.5;
+        x.width = w;
+      }
+
+      document.getElementById("rightp").onmouseover = function () {
+        enlarge("rightp");
+      };
+
+      document.getElementById("pier").onmouseover = function () {
+        enlarge("pier");
+      };
+
+      function reduce(mini) {
+        let x = document.getElementById(mini);
+        let w = x.width;
+        w = w / 1.5;
+        x.width = w;
+      }
+
+      document.getElementById("rightp").onmouseout = function () {
+        reduce("rightp");
+      };
+      
+      document.getElementById("pier").onmouseout = function () {
+        reduce("pier");
+      };
 </script>
 </body>
 </html>
