@@ -47,7 +47,7 @@ h1{
 }
 .pier{
     position: relative;
-    z-index: 2;
+    z-index: 5;
     display: block;
     float: left;
     border-width:4px; border-style: solid; border-color: lightskyblue;
@@ -67,7 +67,7 @@ h1{
 }
 .rightp{
     position: relative;
-    z-index: 2;
+    z-index: 5;
     display: block;
     float: right;
     border-width:4px; border-style: solid; border-color: lightskyblue;
